@@ -11,6 +11,7 @@
       v-model="form.password"
     />
     <button v-on:click="signup">Sign Up</button>
+    <p><router-link to="/login">Login</router-link></p>
   </div>
 </template>
 
@@ -39,8 +40,8 @@ export default {
       };
       let result = await axios.post(config.API_DOMAIN_URL + "/users", param);
       if (result.status == 201) {
-        alert("Created");
         localStorage.setItem("user-info", JSON.stringify(result.data));
+        this.$router.push({ name: "Home" });
       }
     },
   },

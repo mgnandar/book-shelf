@@ -11,6 +11,21 @@
       "email": "peter@test.com",
       "password": "Peter",
       "id": 2
+    },
+    {
+      "name": "bruce",
+      "email": "bruce@test.com",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "Stranger on the train",
+      "author": "Patricia Highsmith",
+      "published": "1950",
+      "rating": "3.5/5"
     }
   ]
 }
