@@ -33,12 +33,11 @@ export default {
   methods: {
     async signup() {
       console.log(this.form);
-      let param = {
-        name: this.form.name,
-        email: this.form.email,
-        password: this.form.password,
-      };
-      let result = await axios.post(config.API_DOMAIN_URL + "/users", param);
+
+      let result = await axios.post(
+        config.API_DOMAIN_URL + "/users",
+        this.form
+      );
       if (result.status == 201) {
         localStorage.setItem("user-info", JSON.stringify(result.data));
         this.$router.push({ name: "Home" });

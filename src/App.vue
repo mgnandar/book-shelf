@@ -15,7 +15,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
- }
+}
 
 body {
   padding: 0;
@@ -23,7 +23,8 @@ body {
 }
 
 .register input,
-.login input {
+.login input,
+.bookform input {
   display: block;
   width: 264px;
   height: 25px;
@@ -32,7 +33,8 @@ body {
 }
 
 .register button,
-.login button {
+.login button,
+.bookform button {
   cursor: pointer;
   width: 286px;
   height: 36px;

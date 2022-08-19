@@ -21,11 +21,11 @@
   ],
   "books": [
     {
-      "id": 1,
-      "name": "Stranger on the train",
-      "author": "Patricia Highsmith",
-      "published": "1950",
-      "rating": "3.5/5"
+      "name": "aa ",
+      "author": "aa",
+      "published": "aa",
+      "rating": 1,
+      "id": 1
     }
   ]
 }

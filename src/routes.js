@@ -40,7 +40,7 @@ const routes = [
   },
   {
     name: "UpdateBook",
-    path: "/update",
+    path: "/update/:id",
     component: UpdateBook,
     meta: {
       requiresAuth: true,
