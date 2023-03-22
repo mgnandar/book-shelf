@@ -48,7 +48,7 @@ export default {
   methods: {
     async loadData() {
       let user = localStorage.getItem("user-info");
-      this.name = JSON.parse(user).name;
+      this.name = JSON.parse(user)?.name || '--';
 
       let result = await axios.get(config.API_DOMAIN_URL + "/books");
       this.books = result.data;

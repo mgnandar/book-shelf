@@ -1,3 +1,3 @@
 module.exports = {
-  API_DOMAIN_URL: "http://localhost:3000",
+  API_DOMAIN_URL: "https://book-shelf-api.onrender.com",
 };
